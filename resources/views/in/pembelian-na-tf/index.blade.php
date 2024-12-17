@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title')
-    Pembelian Transfer
+Pembelian Transfer
 @stop
 @section('content')
     <div class="card-body">
@@ -34,12 +34,19 @@
 @stop
 @push('js')
     <script>
+        new TomSelect("#select-supplier", {
+            create: false,
+        });
+        new TomSelect("#select-barang", {
+            create: false,
+        });
+    </script>
+    <script>
         // MENAMPILKAN TABLE
         $table_data = $('#tbl_pembelian_na_tf').DataTable({
             processing: true,
             serverSide: true,
             ajax: "{{ route('pembelian-na-tf.show') }}",
-            scrollX: true,
             columns: [{
                     data: 'no_nota',
                     name: 'no_nota'
@@ -93,7 +100,7 @@
         }
 
         $('#deleteModalForm').submit(function(event) {
-            event.preventDefault(); // Prevent the form from submitting via the browser
+            event.preventDefault();
             $.ajax({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
