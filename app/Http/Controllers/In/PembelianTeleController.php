@@ -87,13 +87,13 @@ class PembelianTeleController extends Controller
     public function update(Request $request, $id)
     {
         $data = PembelianTele::find($id);
-        $total_cash = $request->harga * $request->qty;
+        $total_hutang = $request->harga * $request->qty;
 
         $data->update($request->except('_token'));
         $data->update([
             'nama_barang' => $request->nama_barang,
             'nama_barang_dan_no_lot' => $data->nama_barang,
-            'cash'=>$total_cash,
+            'hutang'=>$total_hutang,
         ]);
         return redirect()->route('pembelian-tele.index');
     }
