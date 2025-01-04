@@ -47,7 +47,7 @@ class PenjualanTFController extends Controller
         
         // STORE PENJUALAN TF
         $new_data = PenjualanTF::create([
-            'toko'          => 'TOKO WINONG',
+            'toko'          => 'TOKO JOMBANG',
             'nama_konsumen' => $request->nama_konsumen,
             'bank'          => $request->bank,
             'total'         => $request->total,

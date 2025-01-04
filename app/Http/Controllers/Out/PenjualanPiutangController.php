@@ -45,7 +45,7 @@ class PenjualanPiutangController extends Controller
             //store data penjualan piutang
             $new_data = PenjualanPiutang::create([
             'no_nota'       => $request->no_nota,
-            'toko'          => 'TOKO WINONG',
+            'toko'          => 'TOKO JOMBANG',
             'nama_konsumen' => $request->nama_konsumen,
             'total'         => $request->total,
             'sisa'          => $request->total,

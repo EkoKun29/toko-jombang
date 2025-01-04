@@ -37,7 +37,7 @@ class ReturPembelianNaController extends Controller
     {
         // STORE PENJUALAN CASH
         $new_data = ReturPembelianNa::create([
-            'atas_nama_sales'   => 'TOKO WINONG',
+            'atas_nama_sales'   => 'TOKO JOMBANG',
             'yang_bawa_barang'  => $request->yang_bawa_barang,
             'nmr'               => $request->nmr,
             'tgl_retur'         => $request->tgl_retur,

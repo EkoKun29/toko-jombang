@@ -34,7 +34,7 @@ class PenjualanCashController extends Controller
 
         // STORE PENJUALAN CASH
         $new_data = PenjualanCash::create([
-            'toko'          => 'TOKO WINONG',
+            'toko'          => 'TOKO JOMBANG',
             'nama_konsumen' => $request->nama_konsumen,
             'total'         => $request->total,
             'bayar'         => $request->bayar,
