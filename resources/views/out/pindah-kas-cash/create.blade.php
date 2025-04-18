@@ -15,7 +15,7 @@
                     @include('components.input', [
                         'label' => 'Sales',
                         'name' => 'sales',
-                        'value' => 'TOKO MBINGUNG',
+                        'value' => 'TOKO JOMBANG',
                         'attr' => 'readonly="true"',
                     ])
                     @include('components.input', [
