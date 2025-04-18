@@ -26,7 +26,7 @@ class PembayaranPiutangReturController extends Controller
     {
         // STORE PEMBAYARAN PIUTANG RETUR
         $new_data = PembayaranPiutangRetur::create([
-            'toko'              => 'TOKO WINONG',
+            'toko'              => 'TOKO JOMBANG',
             'nama_konsumen'     => $request->nama_konsumen,
             'no_nota_piutang'   => $request->no_nota_piutang,
             'tgl_nota_piutang'  => $request->tgl_nota_piutang,

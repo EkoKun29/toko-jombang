@@ -41,7 +41,7 @@ class ReturPenjualanController extends Controller
         DB::beginTransaction();
         try {
             $new_data = ReturPenjualan::create([
-            'toko'              => 'TOKO WINONG',
+            'toko'              => 'TOKO JOMBANG',
             'nama_konsumen'     => $request->nama_konsumen,
             'total'             => $request->total,
             'uang_keluar'       => $request->uang_keluar,
